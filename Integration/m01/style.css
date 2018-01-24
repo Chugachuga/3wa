@@ -1,0 +1,84 @@
+.predari
+{
+  color: red;
+}
+
+.pbluari
+{
+  color: blue;
+}
+
+.pgreeari
+{
+  color : green;
+}
+
+.bgredmon
+{
+  background-color: red;
+  font-family: monospace;
+}
+
+.bgblumon
+{
+  background-color: blue;
+  font-family: monospace;
+}
+
+.bggreemon
+{
+  font-family: monospace;
+  background-color: green;
+}
+
+.center-align
+{
+  text-align: center;
+}
+
+.footimg
+{
+  height: 50px;
+  width: 50px;
+}
+header
+{
+  position : fixed;
+  top : 0px;
+  left : 0px;
+  width: 100%;
+  color : white;
+  text-align: center;
+  opacity: 0.8;
+  background-color: #F96801;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.test
+{
+  color: black;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+a:hover
+{
+  color: white;
+}
+section
+{
+  margin-top: 150px;
+}
+body
+{
+  background-color: #F5F2ED;
+  display: inline-block;
+}
+footer
+{
+  font-size: 10px;
+}
+
+.grey
+{
+  color: grey;
+}

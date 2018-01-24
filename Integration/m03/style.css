@@ -1,0 +1,293 @@
+
+/*::::::::::index.html:::::::::::*/
+
+* {
+  box-sizing: border-box;
+}
+/***Background image***/
+.bgimg {
+  background-image: url("img/fond.png");
+  background-repeat: repeat;
+  margin: 0;
+}
+/***Container 1***/
+
+.c1 {
+  width: 800px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+/***Header Menu***/
+
+.headeri {
+  display: block;
+  margin-top: 0px;
+  padding-top: auto;
+  padding-bottom: auto;
+  color: black;
+  height: 150px;
+  width: 100%;
+  background-color: #b8cb21;
+}
+
+/***Typographie Menu + Titre H1***/
+
+nav, h1 {
+   font-family: "oswald";
+}
+
+/***Logo Centrage***/
+
+.test {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+nav {
+   font-size: 1.3em;
+   margin-top: 60px;
+   margin-bottom: 10px;
+   float: right;
+}
+nav a {
+  margin-right: 40px;
+  color: black;
+}
+
+main {
+  /*display: flex;
+  display: -moz-box;
+  display: -webkit-box;
+  flex-wrap: wrap;*/
+  display: inline-block;
+  padding : 25px;
+}
+
+article {
+  padding: 10px;
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+H1 {
+  color: #b8cb21;
+}
+
+HR {
+  width: 50%;
+}
+.imgs {
+  float: left;
+  width : 200px;
+  height: auto;
+  padding-right: 10px;
+}
+
+.p1 {
+  float: none;
+}
+
+.p2 {
+  float: left;
+}
+
+.read {
+  padding : 10px;
+  text-decoration: none;
+  float: right;
+  background-color: #b8cb21;
+  color: white;
+  text-align: center;
+  }
+
+.menu:hover {
+  color: white;
+}
+.read:hover {
+  background-color: #45a049;
+  color: white;
+}
+
+.clear {
+  clear: both;
+}
+
+footer {
+    text-align: center;
+}
+
+.footimg {
+  height: 50px;
+  width: auto;
+}
+
+/*::::::::CONTACT FORM::::::::::*/
+
+.c2 {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  background-color: #F6F6F5;
+}
+
+/*.hcf {
+  background-color: black;
+  opacity: 0.8;
+}*/
+
+.h1cf {
+  color: black;
+}
+
+fieldset {
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+legend {
+  text-align: center;
+}
+.contactf {
+  display: block;
+  position: relative;
+  font-size: 1.4em;
+  width: 100%;
+  padding: 10px;
+  font-style: "oswald";
+}
+
+input[type=text], select, textarea {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border-width: thin;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  height: 40px;
+  font-size: 20px;
+
+}
+
+option {
+  font-size: 22px;
+  padding: 10px;
+}
+
+input[type=submit] {
+    background-color: #b8cb21;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 150px;
+    font-size: 20px;
+    font-family: "oswald";
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+label {
+  font-family: "oswald";
+}
+
+.box {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  /*margin-left: auto;
+  margin-right: auto;*/
+  cursor: pointer;
+  font-size: 22px;
+  font-family: "oswald";
+}
+
+input[type="radio"] {
+  float: left;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+/*::::::::::ABOUT US::::::::::::*/
+
+.imgfr {
+  float: right;
+}
+
+.c3 p {
+  font-size: 20px;
+}
+
+.cartouche
+{
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  display: inline-block;
+}
+.title {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.descr {
+  font-size: 40px;
+}
+
+.c4 {
+  padding: 20px;
+  display: inline-block;
+  text-align: center;
+  margin : 0;
+}
+
+.c5 {
+  padding: 20px;
+  display: inline-block;
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  border-top: none;
+  border-bottom: none;
+  border-left-color: black;
+  border-right-color: black;
+  margin : 0;
+}
+
+.c6 {
+  padding: 20px;
+  display: inline-block;
+  text-align: center;
+  margin : 0;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li a.link {
+  text-decoration: none;
+  text-align: left;
+  color: grey;
+}
+
+/*:::::::::::LOCATION:::::::::::*/
+
+.map {
+  padding: 25px;
+}
