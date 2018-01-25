@@ -27,8 +27,23 @@ console.log("taux10 * 2 / 4 =", taux10);*/
 const TAUX = 20;
 var ttc;
 var tva;
+var red;
 
 var ht = parseFloat(prompt("HT"));
+var redquestion = prompt("Reduction ? (oui/yes)");
+
+if (redquestion == "oui" || redquestion == "yes")
+{
+  red = parseFloat(prompt("reduction de combien ? (valeur decimale sans unité)"));
+}
+else
+{
+  document.write("Aucune réduction.");
+  red = 0;
+}
+
+console.log(redquestion);
+console.log(red);
 
 if (isNaN(ht) || ht < 0)
 {
@@ -37,6 +52,8 @@ if (isNaN(ht) || ht < 0)
 
 else
 {
+  ht = ht - (ht * (red / 100));
+  console.log(ht);
   tva = ht * (TAUX / 100);
   ttc = ht * (1 + (TAUX / 100));
   document.write("<p>TVA = " + tva + "</p>");
