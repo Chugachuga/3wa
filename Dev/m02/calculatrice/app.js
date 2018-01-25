@@ -22,7 +22,7 @@ console.log("taux10-- =", taux10);
 taux10 = taux10 * 2 / 4;
 console.log("taux10 * 2 / 4 =", taux10);*/
 
-/*:::::::::::::::::::CALCUL TVA TTC::::::::::::::::::::::::*/
+/*::::::::::::CALCUL TVA TTC::::::::::::*/
 /*
 const TAUX = 20;
 var ttc;
@@ -56,84 +56,40 @@ document.write("<p>TVA = " + tva + "</p>");
 document.write("<p>TTC = " + ttc + "</p>");
 */
 
-/*:::::::::::::::::::::CALCULATRICE:::::::::::::::::::::*/
+/*::::::::::::CALCULATRICE::::::::::::*/
 
 var number1 = parseFloat(prompt("number 1"));
 var op = prompt("operator (+, -, *, /)");
 var number2 = parseFloat(prompt("number 2"));
-var result;
 
-if (isNaN(number1) || isNaN(number2))
+if (op == "+" || op =="plus")
 {
-  while (isNaN(number1) || isNaN(number2))
-  {
-    var number1 = parseFloat(prompt("number 1"));
-    var number2 = parseFloat(prompt("number 2"));
-  }
+  var number = number1 + number2;
+}
+if (op == "-" || op =="moins")
+{
+  var number = number1 - number2;
+}
+if (op == "*" || op =="fois")
+{
+  var number = number1 * number2;
+}
+if (op == "/" || op =="divisé")
+{
+  var number = number1 / number2;
 }
 
-switch (op)
-{
-  case "+":
-  case "plus" :
-    result = number1 + number2;
-    break;
-  case "-":
-  case "moins" :
-    result = number1 - number2;
-    break;
-  case "*":
-  case "fois" :
-    result = number1 * number2;
-    break;
-  case "/":
-  case "divisé" :
-    result = number1 / number2;
-    break;
-  case "^":
-  case "puissance" :
-    result = Math.pow(number1, number2);
-    break;
-}
-
-/*if (op == "+" || op == "plus")
-{
-  result = number1 + number2;
-}
-
-if (op == "-" || op == "moins")
-{
-  result = number1 - number2;
-}
-
-if (op == "*" || op == "fois")
-{
-  result = number1 * number2;
-}
-
-if (op == "/" || op == "divisé")
-{
-  result = number1 / number2;
-}
-
-if (op == "^" || op == "puissance")
-{
-  result = Math.pow(number1, number2);
-}
-*/
-console.log(result);
-if (isNaN(result) || result == Infinity)
+if (isNaN(number))
 {
   document.write("ERROR : Please Input Numbers variables or acceptable operator");
 }
-
 else
 {
-  var msg = "Result = " + result + " !";
+  var msg = "Result = " + number + " !";
   document.write(msg);
 }
 
-/*::::::::::::::::::TABLEAUX:::::::::::::::::::*/
+/*:::::::::::::::TABLEAUX::::::::::::::::*/
 /*
 var tab;
 tab = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"];
@@ -149,7 +105,7 @@ else
   alert(tab[i - 1]);
 }*/
 
-/*:::::::::::::::::::::DATE::::::::::::::::::::*/
+/*:::::::::::::::DATE::::::::::::::*/
 /*
 var date;
 var jour;
@@ -196,7 +152,7 @@ function timer()
 setInterval(function() { timer(); }, 1000);
 */
 
-/*::::::::::::::::OBJET VOITURE::::::::::::::::*/
+/*:::::::::::::OBJET VOITURE::::::::::::::*/
 
 /*var jour;
 var mois;
