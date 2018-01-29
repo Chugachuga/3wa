@@ -4,59 +4,64 @@ var gamerchoice;
 var random;
 var tab;
 
-gamerchoice = prompt("pierre, feuille, ciseaux");
-gamerchoice = gamerchoice.toLowerCase();
-tab = ["pierre", "feuille", "ciseaux"]
+tab = ["pierre", "feuille", "ciseaux"];
+
 function randomInt(max)
 {
   return Math.floor(Math.random() * max);
 }
 random = randomInt(3);
-document.write("Vous avez choisi : " + gamerchoice + " ")
-switch (gamerchoice)
-{
-  case "pierre":
-      if (tab[random] == tab[0])
-      {
-        document.write("Ex eaquo : Ordi a joué : " + tab[random]);
-      }
-      if (tab[random] == tab[1])
-      {
-        document.write("Vous avex perdu :  Ordi a joué " + tab[random]);
-      }
-      if (tab[random] == tab[2])
-      {
-        document.write("Vous avez gagné : Ordi a joué  " + tab[random]);
-      }
-      break;
-  case "feuille":
-      if (tab[random] == tab[1])
-      {
-        document.write("Ex eaquo : Ordi a joué : " + tab[random]);
-      }
-      if (tab[random] == tab[2])
-      {
-        document.write("Vous avex perdu :  Ordi a joué " + tab[random]);
-      }
-      if (tab[random] == tab[0])
-      {
-        document.write("Vous avez gagné : Ordi a joué  " + tab[random]);
-      }
-      break;
-  case "ciseaux":
-      if (tab[random] == tab[2])
-      {
-        document.write("Ex eaquo : Ordi a joué : " + tab[random]);
-      }
-      if (tab[random] == tab[0])
-      {
-        document.write("Vous avex perdu :  Ordi a joué " + tab[random]);
-      }
-      if (tab[random] == tab[1])
-      {
-        document.write("Vous avez gagné : Ordi a joué  " + tab[random]);
-      }
-      break;
+
+while (gamerchoice != tab[0] && gamerchoice != tab[1] && gamerchoice != tab[2]) {
+  gamerchoice = prompt("pierre, feuille, ciseaux").toLowerCase();
+  switch (gamerchoice)
+  {
+    case "pierre":
+        document.write("Vous avez choisi : " + gamerchoice + " |");
+        if (tab[random] == tab[0])
+        {
+          document.write("Ex aequo : Ordi a joué : " + tab[random]);
+        }
+        else if (tab[random] == tab[1])
+        {
+          document.write("Vous avez perdu :  Ordi a joué " + tab[random]);
+        }
+        else
+        {
+          document.write("Vous avez gagné : Ordi a joué  " + tab[random]);
+        }
+        break;
+    case "feuille":
+        document.write("Vous avez choisi : " + gamerchoice + " |");
+        if (tab[random] == tab[1])
+        {
+          document.write("Ex aequo : Ordi a joué : " + tab[random]);
+        }
+        else if (tab[random] == tab[2])
+        {
+          document.write("Vous avez perdu :  Ordi a joué " + tab[random]);
+        }
+        else
+        {
+          document.write("Vous avez gagné : Ordi a joué  " + tab[random]);
+        }
+        break;
+    case "ciseaux":
+        document.write("Vous avez choisi : " + gamerchoice + " |");
+        if (tab[random] == tab[2])
+        {
+          document.write("Ex aequo : Ordi a joué : " + tab[random]);
+        }
+        else if (tab[random] == tab[0])
+        {
+          document.write("Vous avez perdu :  Ordi a joué " + tab[random]);
+        }
+        else
+        {
+          document.write("Vous avez gagné : Ordi a joué  " + tab[random]);
+        }
+        break;
+  }
 }
 
 /*var i;

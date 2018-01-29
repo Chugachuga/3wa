@@ -1,0 +1,154 @@
+* {
+  font-family: arial;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+}
+/*:::::::::::::::::::::::H E A D E R::::::::::::::::*/
+.header1 {
+  display: flex;
+  justify-content:flex-start;
+}
+
+.intro {
+  padding-top: 40px;
+  margin: 0;
+  color: grey;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+/*::::N A V::::*/
+.nav {
+  width: 100%;
+  text-align: center;
+  color: #2CBCD6;
+  text-decoration: none;
+  list-style: none;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+}
+
+.hmenu {
+  display: inline-block;
+  text-decoration: none;
+  list-style: none;
+  margin : 0;
+  color: #2CBCD6;
+  font-weight: bold;
+}
+
+.test {
+  padding: 25px;
+}
+
+.hmenu a{
+  text-decoration: none;
+  color: #2CBCD6;
+}
+
+li {
+  list-style: none;
+  font-weight: lighter;
+}
+
+.submenu
+{
+  text-decoration: none;
+  list-style: none;
+  display: none;
+  float: none;
+  width: 100%;
+  padding: 0;
+}
+
+.menu li ul {
+  padding: 0;
+}
+
+li ul li ul {
+   padding: 0;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #7FD7E7;
+}
+/*::::H O V E R::::*/
+
+.hmenu:hover .test{
+  background-color: #2CBCD6;
+  color: white;
+}
+
+.hmenu:hover .submenu{
+  position: absolute;
+  left: 0;
+  display: block;
+  z-index: 1000;
+  background-color: #2CBCD6;
+  color: white;
+}
+
+/*::::D I V    S U B M E N U::::*/
+
+.divsub {
+  display: inline-block;
+  vertical-align: top;
+  padding: 25px;
+  width: 45%;
+}
+
+.divsub ul li a {
+  color: white;
+}
+
+
+/*:: H R ::*/
+
+.hr {
+  border-style: solid;
+  border-color: #2CBCD6;
+  margin: 0;
+  border-width: 2px;
+}
+
+/*:::: A R T I C L E::::*/
+.contarticle {
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.h1article {
+  font-size:  1.5em;
+  color: #2CBCD6;
+  margin-bottom: 0;
+}
+
+/*:::: F O O T E R::::*/
+
+footer{
+  text-align: center;
+  background-color: #2CBCD6;
+  color: white;
+  width: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  color: #7FD7E7;
+}
+
+.footimg {
+  width: 50px;
+  margin-top: 10px;
+}

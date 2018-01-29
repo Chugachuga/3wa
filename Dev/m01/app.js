@@ -24,10 +24,11 @@ console.log("taux10 * 2 / 4 =", taux10);*/
 
 /*::::::::::::CALCUL TVA TTC::::::::::::*/
 
-const TAUX = 20;
+/*const TAUX;
 var ttc;
 var tva;
 
+TAUX = 20;
 var ht = parseFloat(prompt("HT"));
 
 if (isNaN(ht) || ht < 0)
@@ -42,7 +43,7 @@ else
   document.write("<p>TVA = " + tva + "</p>");
   document.write("<p>TTC = " + ttc + "</p>");
 }
-
+*/
 /*::::::::::::CALCULATRICE::::::::::::*/
 /*
 
@@ -142,7 +143,7 @@ setInterval(function() { timer(); }, 1000);
 
 /*:::::::::::::OBJET VOITURE::::::::::::::*/
 
-/*var jour;
+var jour;
 var mois;
 var date;
 var year;
@@ -164,4 +165,3 @@ date = car.buy.getDate();
 year = car.buy.getFullYear();
 
 document.write("<ul><li>Marque : " + car.marque + "</li><li> Année de construction : " + car.year + "</li>" + "</li><li>Vehicule acheté le : " + jour[j] + " " + date + " " + mois[m] + " " + year + "</li><li> Passager(s) : " + car.pass[0] + " , " + car.pass[1] + "</li></ul>");
-*/
