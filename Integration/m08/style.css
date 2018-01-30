@@ -1,0 +1,143 @@
+/*::::::::::::::::::G E N E R A L::::::::::::::::::::::*/
+
+* {
+  box-sizing: border-box;
+  font-family: "PT Sans Narrow";
+}
+
+body {
+  background: #f3f2f5;
+}
+
+.container {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*:::::::::::::::::::::H E A D E R:::::::::::::::::::::::*/
+.header1 {
+  display: block;
+  text-align: center;
+}
+
+.imglogo {
+  width: 120px;
+}
+
+.nav {
+  font-size: 0;
+  background: #30a894;
+}
+
+.menu {
+  font-size: 1rem;
+  display: inline-block;
+  width: 33.33%;
+  padding: 25px;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+ /*::::::::::::::M A I N  B L O C K  A R T I C L E:::::::::*/
+.mainarticle {
+  vertical-align: top;
+  display: inline-block;
+  width: 70%;
+  padding-right: 10px;
+  font-size: 1.6rem;
+}
+
+.hr1 {
+  border: solid thin #30a894;
+}
+
+.imgalaune {
+  display: inline-block;
+  content: url("./img/illu.jpg");
+  width: 100%;
+}
+
+.h2article2, .link, .maintitle{
+  color: #30a894;
+  text-decoration: none;
+}
+
+.maintitle {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.h2article2 {
+  font-size: 1.2rem;
+}
+
+.classicp {
+  font-size: 0.8rem;
+}
+
+/*:::::::::::::::::S I D E B L O C K:::::::::::::::::*/
+.aside1 {
+  vertical-align: top;
+  display: inline-block;
+  width: 30%;
+  padding: 20px 10px;
+  background: #b8dcb1;
+  font-size: 1.6rem;
+}
+
+/*:::::::::::::::::::::F O O T E R:::::::::::::::::::::*/
+
+footer {
+  text-align: center;
+}
+
+.footimg {
+  width: 50px;
+  margin-top: 40px;
+}
+
+/*:::::::::::::::R E S P O N S I V E   D E S I G N:::::::::*/
+
+/*:::::RESPONSIVE TABLETTE::::*/
+@media (max-width: 1024px)
+{
+  .container {
+    width: 90%;
+  }
+
+  .imgalaune {
+    content: url("./img/illu-tablette.jpg");
+  }
+
+  .menu {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+  }
+
+  .mainarticle, .aside1{
+    display: block;
+    width: 100%;
+  }
+}
+
+/*::::::::RESPONSIVE MOBILE:::::*/
+
+@media (max-width: 730px)
+{
+  .container {
+    width: 90%;
+  }
+
+  .imgalaune {
+    content: url("./img/illu-mobile.jpg");
+  }
+  .aside1 {
+    display: none;
+  }
+}
