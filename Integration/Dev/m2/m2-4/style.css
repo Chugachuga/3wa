@@ -1,0 +1,96 @@
+*
+{
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+.bg {
+  margin: 0;
+  background-image: url("images/concrete_seamless.png");
+  background-size: cover;
+  background-repeat: repeat;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 100px;
+  position: relative;
+}
+
+
+.slidertitle {
+  margin-top: 0;
+}
+
+#toolbar{
+  border: none;
+  background: none;
+}
+button[id^="slider-"]
+{
+  margin: 10px;
+}
+
+.toolbar_toggle {
+  display: none;
+}
+
+.display {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 250px;
+}
+
+#mySlides {
+  max-width: 630px;
+  max-height: 450px;
+  min-width: 630px;
+  min-height: 450px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 0.5em black;
+}
+.slider {
+  padding-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  transform: rotate(-5deg);
+}
+
+.blockimg {
+  display: inline-block;
+  text-align: center;
+}
+
+#imgtitle {
+
+}
+
+.divnode {
+  display: inline-block;
+  background-color: white;
+  border: solid black thin;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.container {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.container a{
+  padding: 10px;
+}
+
+.test{
+  background: black;
+}

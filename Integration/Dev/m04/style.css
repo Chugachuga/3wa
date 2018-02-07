@@ -1,0 +1,24 @@
+*{
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.dragontape{
+  background-color: red;
+  color: white;
+}
+
+.joueurtape{
+  background-color: green;
+  color: white;
+}
+
+.jwin {
+  background-color: green;
+  color: white;
+}
+
+.dwin {
+  background-color: red;
+  color: white;
+}

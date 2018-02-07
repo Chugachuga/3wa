@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+table {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid grey 1px;
+  border-collapse : collapse;
+  text-align: center;
+}
+
+td {
+  padding: 25px;
+  border: grey solid 1px;
+}
+
+.color {
+  color: white;
+  background: red;
+}
