@@ -1,0 +1,30 @@
+*
+{
+  box-sizing: border-box;
+}
+
+.form {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.select {
+  color: blue;
+}
+
+.edit {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+}
+
+li {
+  display: inline-block;
+}
+
+.test{
+  padding: 20px;
+}

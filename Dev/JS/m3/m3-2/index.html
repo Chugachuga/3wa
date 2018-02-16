@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>Carnet</title>
+</head>
+<body>
+	<main>
+    <section class="container">
+      <h1>Carnet d' Addresses</h1>
+      <section class="list">
+        <ul></ul>
+      </section>
+      <button id="add"><i class="fas fa-plus"></i></button>
+      <button id="remove"><i class="far fa-trash-alt"></i></button>
+      <HR class="hr">
+        <section class="form">
+          <label for="civil">Civilité</label>
+          <select id="civil">
+            <option value="MR">Monsieur</option>
+            <option value="MME">Madame</option>
+          </select>
+          <div class="nom">
+            <label for="lastname">Nom</label>
+            <input type="text" id="lastname">
+          </div>
+          <div class="prenom">
+            <label for="firstname">Prenom</label>
+            <input type="text" id="firstname">
+          </div>
+          <div class="tel">
+            <label for="phonenumber">Numero de Téléphone</label>
+            <input type="text" id="phonenumber">
+          </div>
+          <input type="submit" id="submit" value="Enregistrer">
+        </section>
+    </section>
+	</main>
+	<script
+	  src="http://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+  <script src="./JS/addressbook.js"></script>
+  <script src="./JS/utilities.js"></script>
+  <script src="./JS/events.js"></script>
+  <script src="./JS/main.js"></script>
+</body>
+</html>
