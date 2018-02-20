@@ -1,0 +1,391 @@
+/*:::::::::::::::::::::::::GLOBAL::::::::::::::::::::::*/
+
+@font-face {
+  font-family: "BodegaSans";
+  src: url("../fonts/BodegaSans_Black.ttf");
+}
+
+*{
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-family: "BodegaSans", sans-serif
+}
+body {
+  background-image: url("../img/bg_body.svg");
+  background-repeat: repeat;
+  background-color: #4e4e4e
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto
+}
+/*------------------------------------------------------------*/
+
+/*::::::::::::::::::::::H E A D E R::::::::::::::::::::::::::*/
+header {
+  background: linear-gradient(-45deg, #444444 50%, white 50%);
+}
+header > .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header > .container > svg{
+  width: 180px;
+  height: auto;
+  max-width: 100%;
+}
+
+header > .container > nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+svg:hover #path4488{
+  fill:#29e6cc !important;
+}
+
+svg:hover #path4488-3{
+  fill:#29e6cc !important;
+}
+
+header > .container > nav > a{
+  text-align: right;
+  text-decoration: none;
+  color: white;
+  padding: 10px 0;
+  font-family: "BodegaSans"
+}
+
+/*------------------------------------------------------------*/
+
+/*::::::::::::::::::::::::M A I N:::::::::::::::::::::::::::::*/
+
+/*::::::::::::::::::::SLIDER + MOTOS ARTICLE:::::::::*/
+
+.container h1{
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  padding: 30px;
+}
+
+.container > h1 > span{
+  color: #FFB845;
+  font-family: "BodegaSans";
+}
+
+.motos{
+  display: flex;
+  align-content: space-between;
+}
+
+.container h2{
+  color: white;
+  padding: 20px;
+  border-width: 1px 0 0 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.container h2 span{
+  color: #FFB845;
+}
+
+.motos article{
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+article + article{
+  margin-left: 40px;
+}
+
+.motos img{
+  width: 100%;
+  max-width: 100%;
+}
+
+.motos article h3{
+  font-size: 2rem;
+  color: #FFB845;
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  border-color: #FFB845;
+  padding: 0 20px 20px;
+  margin-top: 0;
+}
+
+.motos article a{
+  width: 100%;
+  text-decoration: none;
+  color : white;
+}
+
+/*-----------------------------------------*/
+
+/*::::::::::::DETAILS MOTOS::::::::::::::::*/
+
+.detail{
+  margin-bottom: 100px;
+}
+
+.text{
+  display: inline-block;
+  width: 50%;
+}
+.test{
+  width: 100%;
+  background-color: #FFB845;
+  padding: 10px 20px;
+}
+
+.detail video{
+  float: right;
+  width: 50%;
+}
+
+.detail p{
+  margin-top: 0;
+  color: white;
+}
+
+.clear{
+  overflow: auto;
+}
+
+.icone{
+  display: inline-block;
+  padding: 40px;
+  color: white;
+}
+
+.fa-facebook-square, .fa-twitter-square, .fa-linkedin
+{
+  color: white;
+  font-size: 2rem;
+}
+/*----------------------------------------*/
+
+/*:::::::::::::F O O T E R::::::::::::::::*/
+
+footer {
+  text-align: center;
+  color: white;
+}
+
+footer a{
+  color: white;
+}
+
+footer > h3{
+  border: black solid;
+  border-width: 1px 0 0 0;
+  padding: 20px;
+}
+
+footer > nav > a{
+  padding: 10px;
+}
+
+#licence{
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 25px;
+}
+
+#licence > a > img{
+  width: 50px;
+  max-width: 100%;
+}
+
+#licence a{
+  font-size: 1rem;
+  color: white;
+}
+
+#licence > span{
+  font-size: 1rem;
+}
+
+/*--------------------------------------*/
+
+/*-----------------------------------------------------------------*/
+
+/*:::::::::::::::::::::::::R E S P O N S I V E:::::::::::::::::::::*/
+
+@media screen and (max-width: 425px)
+{ /*:::::::::::::::::H E A D E R::::::::::::*/
+
+  header {
+    background: linear-gradient(-25deg, #444444 50%, white 50%);
+    width: 90%;
+    height: 500px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+
+  .container > img{
+    width: 100%;
+    max-width: 100%;
+  }
+
+  header > .container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  header > .container > nav{
+    font-size: 2rem;
+    line-height:60px;
+  }
+
+  /*----------------------------------------*/
+
+  /*:::::::::::::M A I N::::::::::::::::::::*/
+  .container h1, h2 {
+    line-height: 60px;
+  }
+  .motos {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+  }
+  .motos article {
+    margin-left: 0;
+  }
+
+  article + article {
+    margin-top: 20px;
+  }
+
+  .detail {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 40px;
+  }
+
+  .detail > video {
+    width: 100%;
+  }
+  /*----------------------------------------*/
+
+  /*::::::::::::::F O O T E R;;;;;;;;;;;;;;;*/
+
+  footer {
+    padding: 40px 100px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 30px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  footer > h3 {
+    border: 0;
+    padding-bottom: 0;
+  }
+  footer > a{
+    padding: 10px;
+  }
+  /*----------------------------------------*/
+}
+
+@media screen and (max-width: 768px) /*:::::::T A B L E T T E::::::::*/
+{ /*:::::::::::::::::H E A D E R::::::::::::*/
+  *
+  {
+    font-size: 1.4rem;
+  }
+
+  span {
+    font-size: 2rem;
+  }
+
+  header {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  header > .container {
+    width: 100%;
+    padding: 20px 10px;
+  }
+  .container > img {
+    width: 250px;
+    max-width: 100%;
+  }
+
+  header > .container > nav {
+    font-size: 2rem;
+  }
+  /*----------------------------------------*/
+
+  /*:::::::::::::M A I N::::::::::::::::::::*/
+  .container h1, h2 {
+    word-spacing: 10px;
+    line-height: 60px;
+    font-size: 2rem;
+  }
+
+  .motos {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+  }
+
+  .motos article {
+    margin-left: 0;
+  }
+
+  article + article {
+    margin-top: 20px;
+  }
+
+  .detail {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 40px;
+  }
+  .text {
+    width: 100%;
+  }
+
+  .icone{
+    display: block;
+  }
+  .detail > video {
+    width: 100%;
+  }
+  /*----------------------------------------*/
+
+  /*::::::::::::::F O O T E R;;;;;;;;;;;;;;;*/
+
+  footer {
+    padding: 40px 80px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 30px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  footer > h3 {
+    border: 0;
+    padding-bottom: 0;
+  }
+  /*----------------------------------------*/
+}
