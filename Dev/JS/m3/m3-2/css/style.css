@@ -1,0 +1,90 @@
+*
+{
+  box-sizing: border-box;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+.field{
+  margin-top: 20px;
+  border: lightblue thin solid;
+  border-radius: 5px;
+  display: block;
+  padding-left: 20px;
+}
+
+.result{
+  padding: 20px;
+  border: lightblue thin solid;
+  border-radius: 5px;
+}
+
+.choix {
+  display: block;
+  padding: 5px 0;
+}
+.color {
+  color: red;
+}
+legend{
+  color: lightblue !important;
+}
+
+.test2 {
+  font-size: 0;
+}
+.film {
+  vertical-align: top;
+  display: inline-block;
+  width: 25%;
+  font-size: 1rem;
+}
+
+.film h1 {
+  font-size: 1rem;
+}
+.film + .film{
+  padding-left: 10px;
+}
+.img1 {
+  background: url("../img/1.jpg"), no-repeat;
+  background-size: 100% 100%;
+  padding: 140PX 0;
+}
+.img2 {
+  background: url("../img/2.jpg"), no-repeat;
+  background-size: 100% 100%;
+  padding: 140PX 0;
+}
+.img3 {
+  background: url("../img/3.jpg"), no-repeat;
+  background-size: 100% 100%;
+  padding: 140PX 0;
+}
+.img4 {
+  background: url("../img/4.jpg"), no-repeat;
+  background-size: 100% 100%;
+  padding: 140PX 0;
+}
+.img5 {
+  background: url("../img/5.jpeg"), no-repeat;
+  background-size: 100% 100%;
+  padding: 140PX 0;
+}
+.img6 {
+  background: url("../img/6.jpg"), no-repeat;
+  background-size: 100% 100%;
+  padding: 140PX 0;
+}
+.img7 {
+  background: url("../img/7.jpg"), no-repeat;
+  background-size: 100% 100%;
+  padding: 140PX 0;
+}
+.img8 {
+  background: url("../img/8.jpg"), no-repeat;
+  background-size: 100% 100%;
+  padding: 140PX 0;
+}
