@@ -1712,28 +1712,6 @@ body {
   background-color: rgba(0, 0, 0, .25);
 }
 
-.text-block-6 {
-  display: inline;
-  width: 368px;
-  height: 326px;
-  padding-top: 20px;
-  padding-bottom: 100px;
-  background-image: url('../images/post-it-no-text.png');
-  background-position: 0px 0px;
-  background-size: 368px 326px;
-  -webkit-transform: scale(0.44);
-  -ms-transform: scale(0.44);
-  transform: scale(0.44);
-  -webkit-transition: -webkit-transform 0ms ease;
-  transition: -webkit-transform 0ms ease;
-  transition: transform 0ms ease;
-  transition: transform 0ms ease, -webkit-transform 0ms ease;
-  font-family: 'Gotham Extra Light', sans-serif;
-  font-size: 40px;
-  line-height: 80px;
-  font-weight: 700;
-}
-
 .text-block-6a {
   position: static;
   left: 207px;
@@ -1753,36 +1731,12 @@ body {
   transition: transform 0ms ease, -webkit-transform 0ms ease;
   font-family: 'Gotham Extra Light', sans-serif;
   color: rgba(0, 0, 0, .7);
-  font-size: 25px;
+  font-size: 1.5625rem;
   line-height: 80px;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-}
-
-.text-block-6c {
-  position: static;
-  left: -207px;
-  display: inline;
-  width: 368px;
-  height: 326px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-image: url('../images/post-it-no-text.png');
-  background-position: 0px 0px;
-  background-size: 368px 326px;
-  -webkit-transform: scale(0.44);
-  -ms-transform: scale(0.44);
-  transform: scale(0.44);
-  -webkit-transition: -webkit-transform 0ms ease;
-  transition: -webkit-transform 0ms ease;
-  transition: transform 0ms ease;
-  transition: transform 0ms ease, -webkit-transform 0ms ease;
-  font-family: 'Gotham Extra Light', sans-serif;
-  font-size: 40px;
-  line-height: 80px;
-  font-weight: 700;
 }
 
 .text-block-6b {
@@ -1804,7 +1758,7 @@ body {
   transition: transform 0ms ease, -webkit-transform 0ms ease;
   font-family: 'Gotham Extra Light', sans-serif;
   color: rgba(0, 0, 0, .7);
-  font-size: 25px;
+  font-size: 1.5625rem;
   line-height: 80px;
   font-weight: 700;
   text-align: center;
@@ -1831,7 +1785,7 @@ body {
   transition: transform 0ms ease, -webkit-transform 0ms ease;
   font-family: 'Gotham Extra Light', sans-serif;
   color: rgba(0, 0, 0, .7);
-  font-size: 25px;
+  font-size: 1.5625rem;
   line-height: 80px;
   font-weight: 700;
   text-align: center;
@@ -1858,7 +1812,7 @@ body {
   transition: transform 0ms ease, -webkit-transform 0ms ease;
   font-family: 'Gotham Extra Light', sans-serif;
   color: rgba(0, 0, 0, .7);
-  font-size: 25px;
+  font-size: 1.5625rem;
   line-height: 80px;
   font-weight: 700;
   text-align: center;
@@ -1915,7 +1869,7 @@ body {
 .lien-cinetique
 {
     color: hsla(0, 0%, 100%, .9);
-    
+
 }
 
 .form-block {
@@ -2949,7 +2903,7 @@ html.w-mod-js *[data-ix="linkp-24"] {
   {
     margin-top: 0px;
     z-index: 1;
-  }      
+  }
   .nav-menu {
     display: block;
     float: none;
