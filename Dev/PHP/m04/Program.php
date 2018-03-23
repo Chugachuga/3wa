@@ -7,10 +7,10 @@ class Program{
     $rect->setSize(200, 200);
     $rect->setColor("blue");
     $rect->setPosition(20, 20);
-    $rect->setOpacity(0.8);
+    $rect->setOpacity(0.5);
 
     $rect2 = new Rectangle;
-    $rect2->setSize(150, 130);
+    $rect2->setSize(300, 530);
     $rect2->setColor("red");
     $rect2->setPosition(120, 120);
     $rect2->setOpacity(0.5);
