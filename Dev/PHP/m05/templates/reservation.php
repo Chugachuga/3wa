@@ -18,7 +18,7 @@
         </select></p>
         <p>Nombre de couverts
           <select id="nbcouvert" name="nbcouvert">
-          <?php for ($nb = 0; $nb < 13; $nb++): ?>
+          <?php for ($nb = 1; $nb < 13; $nb++): ?>
           <option value="<?php echo $nb ?>"><?php echo $nb?></option>
           <?php endfor; ?>
         </select></p>

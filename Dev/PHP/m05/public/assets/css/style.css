@@ -7,6 +7,10 @@ body
   margin: 0;
 }
 
+h1 {
+  color: red;
+  text-transform: capitalize;
+}
 .container{
   width: 90%;
   margin: 0 auto;
@@ -37,7 +41,19 @@ body
   text-decoration: none;
 }
 
+table {
+  border-collapse: collapse;
+  margin-bottom: 100px;
+}
+table, td, th {
+    border: thin black solid;
+  text-align: center;
+}
 
+td img {
+  width: 200px;
+  height: 100px;
+}
 
 /*:::::::::: H E A D E R::::::::::*/
 

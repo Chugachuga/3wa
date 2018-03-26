@@ -49,7 +49,11 @@ class UserController extends Controller
         Alert::set('Bienvenue '.$user['firstname']);
       }
       else
-        Alert::set('Les identifiants sont incorrects', 'error');
+      {
+        Alert::set('Identifiant ou Mot de Passe incorrect', 'error');
+        header('location: http://localhost/gvilmont/Dev/PHP/m05/signin');
+        exit;
+      }
       if(Auth::admin($user))
       {
         $this->render("admin");

@@ -24,5 +24,21 @@ return [
   "admin" => [
     "path" => "/admin",
     "run"  => "AdminController@admin"
+  ],
+  "addproducts" => [
+    "path" => "/addproducts",
+    "run"  => "AdminController@addproducts"
+  ],
+  "listproducts" => [
+    "path" => "/listproducts",
+    "run"  => "AdminController@displayprod"
+  ],
+  "reservations" => [
+    "path" => "/reservations",
+    "run"  => "AdminController@displayreserve"
+  ],
+  "editproducts" => [
+    "path" => "/editproducts",
+    "run"  => "AdminController@editProducts"
   ]
 ];

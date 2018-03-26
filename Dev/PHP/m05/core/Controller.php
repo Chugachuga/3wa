@@ -1,7 +1,7 @@
 <?php
 class Controller
 {
-  function render($viewName, $template = "default")
+  function render($viewName, $template = "default", $variables = [])
   {
     ob_start();
       require_once "../templates/" . $viewName . ".php";

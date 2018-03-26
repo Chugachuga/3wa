@@ -21,10 +21,13 @@
         <a href="" class="green_button">Commander</a>
       </div>
       <div class="flex_row">
-        <?php if(!empty($_SESSION)): ?>
+        <?php if(!empty($_SESSION['user'])): ?>
         <a href="logout" class="green_button">Déconnexion</a>
       <?php else: ?>
         <a href="signin" class="green_button">Connexion</a>
+      <?php endif;?>
+      <?php if(!empty($_SESSION['user']) && Auth::admin()): ?>
+        <a href="admin" class="green_button">Administration</a>
       <?php endif;?>
       </div>
     </div>

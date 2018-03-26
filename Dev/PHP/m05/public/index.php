@@ -10,6 +10,7 @@ require_once "../src/Model/User.php";
 require_once "../core/Session.php";
 require_once "../core/Alert.php";
 require_once "../core/Auth.php";
+require_once "../core/Upload.php";
 
 $config   = new Config;
 $db       = Database::getInstance($config);
