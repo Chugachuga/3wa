@@ -1,4 +1,6 @@
 <?php
+
+//namespace Resto\App\core
 class Request{
   public $base;
 

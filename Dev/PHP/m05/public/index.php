@@ -1,6 +1,12 @@
 <?php
 
 session_start();
+
+/*spl_autoload_register(function($class)
+{
+  var_dump($class);
+});*/
+
 require_once "../core/Request.php";
 require_once "../core/Config.php";
 require_once "../core/Router.php";

@@ -37,7 +37,7 @@ class User
      $data1 ='SELECT * FROM user WHERE email = :email';
      $req = $this->db->pdo->prepare($data1);
      $req->execute([
-       'email'=>$email
+       'email'=> $email
      ]);
      $result = $req->fetch();
      return $result;

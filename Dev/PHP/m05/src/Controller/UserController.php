@@ -68,4 +68,22 @@ class UserController extends Controller
     Session::remove("user");
     header('location: http://localhost/gvilmont/Dev/PHP/m05/');
   }
+
+  function commander()
+  {
+    $this->loadModel('Products');
+    $products = New Product;
+    $list = $products->getProducts();
+    $this->render("command", "default", $list);
+  }
+
+  public function apigetProducts()
+  {
+    $this->loadModel("Products");
+    $products = new Product;
+    $tojson = $products->getProductByIdbis();
+    $json = json_encode($tojson);
+    echo $json;
+    die;
+  }
 }

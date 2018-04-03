@@ -2,18 +2,20 @@
 
 class Router{
 
-  private $routes;
+  private static $routes;
+  private static $config;
 
   function __construct($config, $request){
-    $this->routes = $config->get("*", "routes");
+    self::$routes = $config->get("*", "routes");
     $this->request = $request;
+    self::$config = $config;
   }
 
   function dispatch()
   {
     $path = $this->request->getPath();
 
-    foreach($this->routes as $route)
+    foreach(self::$routes as $route)
     {
         if($route['path'] == $path)
         {
@@ -51,5 +53,10 @@ class Router{
     {
       throw new Exception("La route n'a pas été trouvée");
     }
+  }
+  static function route($name)
+  {
+    $r = self::$routes[$name];
+    return self::$config->get('base', 'app').$r['path'];
   }
 }

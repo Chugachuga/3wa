@@ -35,13 +35,59 @@ class AdminController extends Controller
       $this->loadModel("Products");
       $product = new Product();
       $image = new Upload;
-      var_dump($_FILES['prodimage']);
       $chemin = $image->storeFile($_FILES['prodimage']);
-      var_dump($chemin);
       $product->add($_POST['prodname'], $_POST['prodprice'], $_POST['prodquantity'], $_POST['proddescr'], $chemin);
       header('location: admin');
     }
     $this->render("addproducts");
+  }
+
+  function editproducts()
+  {
+    $this->loadModel('Products');
+    $products = New Product;
+    $list = $products->getProducts();
+    $this->render("editproducts", "default", $list);
+  }
+
+  function modifProduct()
+  {
+    $this->loadModel('Products');
+    $products = New Product;
+    $product = $products->getProductById($_GET['id']);
+    if (!empty($_POST) && !empty($_FILES))
+    {
+      foreach ($_POST as $key => $value)
+      {
+        if ($value == '')
+        {
+          echo "Error: please input all informations";
+          $this->render("modifproduct", "default", $product);
+          return;
+        }
+      }
+      $image = new Upload;
+      if (empty($_FILES['modifimage']['name']))
+        $chemin = $products->getImageById($_GET['id']);
+      else
+        $chemin = $image->storeFile($_FILES['modifimage']);
+      $products->modifProduct($_POST['modifname'], $_POST['modifprice'], $_POST['modifquantity'], $_POST['modifcomment'], $chemin, $_GET['id']);
+      header('location: editproducts');
+    }
+    $this->render("modifproduct", "default", $product);
+  }
+
+  function deleteProduct()
+  {
+    $this->loadModel('Products');
+    $products = New Product;
+    $image = new Upload;
+    $imgname = $products->getImageById($_GET['id']);
+    $image->deleteimage($imgname);
+    $products->deleteProduct($_GET['id']);
+
+    $list = $products->getProducts();
+    //header('location: editproducts');
   }
 
   function displayprod()
@@ -50,14 +96,6 @@ class AdminController extends Controller
     $products = New Product;
     $list = $products->getProducts();
     $this->render("listproducts", "default", $list);
-  }
-
-  function editProducts()
-  {
-    $this->loadModel('Products');
-    $products = New Product;
-    $list = $products->getProducts();
-    $this->render("editproducts", "default", $list);
   }
 
   function displayreserve()

@@ -1,7 +1,7 @@
 <h1>administration</h1>
 <a href="reservations"><div class="green_button">Réservations</div></a>
 <a href="addproducts"><div class="green_button">Ajout Produits</div></a>
-<a href="#"><div class="green_button">Edit Produits</div></a>
+<a href="editproducts"><div class="green_button">Edit Produits</div></a>
 <a href="listproducts"><div class="green_button">Produits</div></a>
 <h2>Edit Products</h2>
 <table style="width:100%">
@@ -20,6 +20,10 @@
     <td><?php echo $prix . "$"; ?></td>
     <td><?php echo $quantity; ?></td>
     <td><?php echo $comment; ?></td>
+    <td>
+      <a href="modifproduct?id=<?php echo $key['id']; ?>"><div class="green_button">modifier</div></a>
+      <a href="deleteproduct?id=<?php echo $key['id']; ?>"><div class="annuler">supprimer</div></a>
+    </td>
   </tr>
   <?php endforeach; ?>
 </table>

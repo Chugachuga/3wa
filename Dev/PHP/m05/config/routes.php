@@ -40,5 +40,21 @@ return [
   "editproducts" => [
     "path" => "/editproducts",
     "run"  => "AdminController@editProducts"
+  ],
+  "deleteproduct" => [
+    "path" => "/deleteproduct",
+    "run"  => "AdminController@deleteProduct"
+  ],
+  "modifproduct" => [
+    "path" => "/modifproduct",
+    "run"  => "AdminController@modifProduct"
+  ],
+  "command" => [
+    "path" => "/command",
+    "run"  => "UserController@commander"
+  ],
+  "apicommand" => [
+    "path" => "/api/command",
+    "run"  => "UserController@apigetProducts"
   ]
 ];

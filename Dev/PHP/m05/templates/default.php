@@ -18,7 +18,7 @@
     <div class="container navigation">
       <div class="flex_row">
         <a href="reservation" class="green_button">Réserver</a>
-        <a href="" class="green_button">Commander</a>
+        <a href="command" class="green_button">Commander</a>
       </div>
       <div class="flex_row">
         <?php if(!empty($_SESSION['user'])): ?>
